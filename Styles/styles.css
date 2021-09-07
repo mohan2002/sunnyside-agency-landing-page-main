@@ -6,6 +6,7 @@
 body{
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
 
 .hero{
@@ -440,12 +441,14 @@ body{
 
 .Row-3-left-content{
     width: 50%;
+    min-width: 50%;
     font-size: 0.9rem;
     font-weight: 600;
     line-height: 20px;
 }
 .Row-3-right-content{
     width: 50%;
+    min-width: 50%;
     font-size: 0.9rem;
     font-weight: 600;
     line-height: 20px;
@@ -487,15 +490,10 @@ body{
 }
 
 @media all and (max-width:400px){
-    
-    
-    
-    .Row-3-left-inner{
-        width: 650px;
-        margin-bottom: 20px;
+    .Row-3-left-content{
+        min-width: 80%;
     }
-    .Row-3-right-inner{
-        width: 650px;
-        margin-bottom: 20px;
+    .Row-3-right-content{
+        min-width: 80%;
     }
 }
